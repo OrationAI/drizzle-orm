@@ -1,6 +1,6 @@
 {
 	"name": "@oration/drizzle-zod",
-	"version": "0.8.8",
+	"version": "0.8.9",
 	"description": "Generate Zod schemas from Drizzle ORM schemas",
 	"type": "module",
 	"scripts": {
@@ -8,7 +8,7 @@
 		"b": "pnpm build",
 		"test:types": "cd tests && tsc",
 		"pack": "(cd dist && npm pack --pack-destination ..) && rm -f package.tgz && mv *.tgz package.tgz",
-		"publish": "npm publish package.tgz",
+		"publish": "npm publish package.tgz --access public",
 		"test": "vitest run"
 	},
 	"exports": {
